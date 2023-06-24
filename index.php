@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/personalizado.css">
+    <link rel="stylesheet" href="css/personalizado.scss">
     <title>Link Regional</title>
 </head>
 <body>
@@ -16,14 +16,17 @@
   <!---->
     <!-- Inicio Menu -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
 
-<a class="navbar-brand" href="#">LINK REGIONAL</a>
+<a class="navbar-brand" href="#">
+  <img class="icone" src="./imagens/icon.png" alt="">
+</a>
+
   
   <!--
   <a class="navbar-brand" href="#">Navbar</a>
 -->
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+<button class="navbar-toggler" type="button" onclick="showNavBar()" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse d-flex justify-content-end" id="conteudoNavbarSuportado">
@@ -35,7 +38,7 @@
         <a class="nav-link" href="#">Contato</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="cadastra_cliente.php" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle "  href="cadastra_cliente.php" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Área Admin
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -53,6 +56,7 @@
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
     </form>-->
   </div>
+  
 </nav>
 
     <!-- Fim Menu -->
@@ -147,6 +151,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-    
+<script src="js/header.js"></script>
 </body>
 </html>
